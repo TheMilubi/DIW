@@ -1,0 +1,65 @@
+h1
+{
+    color: teal;
+}
+h2
+{
+    color: blue;
+}
+strong
+{
+    color: darkred;
+}
+.destacado
+{
+    color: orange;
+}
+a
+{
+    color: darkred;
+    text-decoration: underline;
+}
+a em 
+{
+    color: blue;
+}
+#adicional p a
+{
+    color: green;
+}
+#especial
+{
+    color: palevioletred;
+}
+td, th, thead, tfoot
+{
+    border: black solid 1px;
+}
+table
+{
+    border-collapse: collapse;
+}
+.especial
+{
+    color: orange;
+}
+span.especial
+{
+    color: purple;
+}
+th
+{
+    color: red;
+}
+tr
+{
+    color: green;
+}
+caption
+{
+    color: blue;
+}
+#adicional p
+{
+    color: darkkhaki;
+}
