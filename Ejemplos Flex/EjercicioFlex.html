@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio</title>
+    <style>
+        .contenedor{
+            height: 600px;
+            display: flex;
+            background-color: grey;
+            flex-flow: column wrap;
+            align-content: space-between;
+        }
+        .col1, .col2, .col3{
+            padding: 1rem;
+            flex-basis: 100%;
+            display: flex;
+            flex-flow: column wrap
+            
+        }
+        .col1,.col3{
+            justify-content: space-between;
+            /* align-content: space-between; */
+        }
+        .col2{
+            justify-content: center;
+            align-content: space-between;
+        }
+        .item{
+            font-size: 2rem;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="col1">
+            <div class="item item1">1</div>
+            <div class="item item2">2</div>    
+        </div>
+        <div class="col2">
+            <div class="item item3">3</div>
+        </div>
+        <div class="col3">
+            <div class="item item4">4</div>
+            <div class="item item5">5</div>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,65 +1,64 @@
-h1
-{
+h1 {
     color: teal;
 }
-h2
-{
+
+h2 {
     color: blue;
 }
-strong
-{
+
+strong {
     color: darkred;
 }
-.destacado
-{
+
+.destacado {
     color: orange;
 }
-a
-{
+
+a {
     color: darkred;
     text-decoration: underline;
 }
-a em 
-{
+
+a em {
     color: blue;
 }
-#adicional p a
-{
+
+#adicional p a {
     color: green;
 }
-#especial
-{
+
+#especial {
     color: palevioletred;
 }
-td, th, thead, tfoot
-{
+
+td, th, thead, tfoot {
     border: black solid 1px;
 }
-table
-{
+
+table {
     border-collapse: collapse;
 }
-.especial
-{
+
+.especial {
     color: orange;
 }
-span.especial
-{
+
+span.especial {
     color: purple;
 }
-th
-{
+
+th {
     color: red;
 }
-tr
-{
+
+tr {
     color: green;
 }
-caption
-{
+
+caption {
     color: blue;
 }
-#adicional p
-{
+
+#adicional p {
     color: darkkhaki;
 }

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejemplo 1</title>
+    <style>
+        .contenedor {
+            background-color: grey;
+            height: 200px;
+            width: 1200px;
+            display: flex;
+            /* flex-flow:  */
+            /* align-items: center; */
+            
+        }
+
+        .item {
+            width: 80px;
+            height: 50px;
+            /* margin: 10px; */
+            color: White;
+            font-size: 32px;
+            text-align: center;
+            line-height: 50px;
+            
+        }
+
+        .item-1 {
+            background: navy;
+            /* order: 1; */
+            /* flex-basis: 50%; */
+            flex-grow: 2;
+            flex-shrink: 1;
+        }
+        
+        .item-2 {
+            background: blue;
+            /* order: 1; */
+            /* flex-basis: 25%; */
+            flex-grow: 1;
+            flex-shrink: 2;
+        }
+        
+        .item-3 {
+            background: SteelBlue;
+            /* order: 1; */
+            /* flex-basis: 25%; */
+            flex-grow: 1;
+            flex-shrink: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="item item-1">1</div>
+        <div class="item item-2">2</div>
+        <div class="item item-3">3</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Overflow</title>
+    <style>
+        .hidden {
+            overflow: hidden;
+        }
+
+        .scroll {
+            overflow: scroll;
+        }
+
+        div {
+            width: 20%;
+        }
+
+        body {
+            overflow: auto;
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>overflow: visible</h1>
+        Loremipsum dolor sit amet, consectetuer
+        adipiscingelit. Cras vitae dolor euenimdignissim lacinia. Maecenas
+        blandit. Morbi mi.
+    </div>
+    <div class="hidden">
+        <h1>overflow: hidden</h1>
+
+        Loremipsum dolor
+        sitamet, consectetueradipiscingelit. Cras vitae dolor euenimdignissim
+        lacinia. Maecenasblandit. Morbimi.
+    </div>
+    <div class="scroll">
+        <h1>overflow: scroll</h1>
+        Loremipsum dolor
+        sit
+        amet, consectetueradipiscingelit. Cras vitae dolor euenimdignissim
+        lacinia.
+        Maecenasblandit. Morbimi.
+    </div>
+</body>
+
+</html>
