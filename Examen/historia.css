@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+    Maquetación Flex
+*/
+.contenedor {
+    display: flex;
+    flex-flow: column;
+}
+body{
+    padding: 0 10%;
+}
+
+nav{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+section{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+h2{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.main{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+}
+.aside{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 29%;
+
+}
+footer{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+}
+
+/*
+    Decoración
+*/
+
+header {
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.contenedor a {
+    text-decoration: none;
+    color: black
+}
+
+nav {
+    padding: 1rem 0;
+    border-bottom: .2rem grey solid;
+    margin-bottom: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 1rem;
+}
+
+footer {
+    padding: 1rem 0;
+    margin-top: 1rem;
+    border-top: .2rem grey solid
+}
+
+img {
+    width: 100%;
+    border-radius: .5rem;
+    max-width: 200px;
+}
+
+.social img {
+    height: 1rem;
+    width: auto;
+}
+
+article {
+    border: .15rem solid grey;
+    border-radius: .5rem;
+    padding: 1rem;
+}
+
+article * {
+    margin-bottom: 1rem;
+}

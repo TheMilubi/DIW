@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header, footer, .ads, article, aside, nav{
+    font-size: 1.5rem;
+    background-color: #ccc;
+    border: red inset .3rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+.contenedor{
+    display: grid;
+    height: 100vh;
+    padding: 1rem;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-areas: 
+        "header header header header header"
+        "nav nav nav nav nav"
+        "sidebar sidebar article article article"
+        "sidebar sidebar article article article"
+        "sidebar sidebar article article article"
+        "sidebar sidebar article article article"
+        "ads ads footer footer footer"
+    ;
+    gap: .5rem;
+}
+header{
+    grid-area: header;
+}
+nav{
+    grid-area: nav;
+}
+aside{
+    grid-area: sidebar;
+}
+article{
+    grid-area: article;
+}
+.ads{
+    grid-area: ads;
+}
+footer{
+    grid-area: footer;
+}

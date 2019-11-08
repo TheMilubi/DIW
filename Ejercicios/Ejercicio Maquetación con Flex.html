@@ -8,7 +8,7 @@
     <title>Ejercicio Práctico FLEX</title>
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" />
     <style>
-        *{
+        /* *{
             box-sizing: border-box;
             margin: 0;
             padding: 0;
@@ -98,72 +98,149 @@
             max-height: 300px;
             width: 100%;
             /* height: 200px;
-            width: 400px; */
+            width: 400px; /
             flex-basis: 100%;
+        } */
+        * {
+            font-family: "Lobster";
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        
+
+        img {
+            width: 100%;
+            max-height: 200px;
+            border-radius: .5rem;
+        }
+
+        main img {
+
+            width: 80%;
+        }
+
+        .container {
+            margin: auto;
+        }
+
+        .social img {
+            height: 1rem;
+            width: auto;
+        }
+
+        main {
+            padding: .5rem;
+            border: 1px solid rgb(51, 51, 51);
+            border-radius: 0.5rem;
+        }
+
+        article {
+            padding: 0.5rem;
+            border: solid rgb(51, 51, 51) 1px;
+            border-radius: .5rem;
+        }
+
+        header {
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-bottom: .1rem solid black;
+        }
+
+        footer {
+            margin-top: 1rem;
+            border-top: 0.1rem solid black;
+            padding: 1rem;
+        }
+
+        nav div {
+            margin-bottom: 1rem;
+            text-align: left;
+        }
+        address p{
+            text-align: left;
+        }
     </style>
+    <!-- <link rel="stylesheet" href="grid.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
     <div class="container">
-        <header>
-            <h1>Ejemplo de Maquetación con Grid</h1>
-            <h4>By @pekechis para @openwebinars</h4>
-        </header>
-        <div class="content_wrapper">
-            <nav>
-                <div>Inicio</div>
-                <div>Galería</div>
-                <div>Productos</div>
-                <div>Clientes</div>
-                <div>Sobre nosotros</div>
-                <div>Contacto</div>
-            </nav>
-            <main>
-                <img src="img/img1.jpg" />
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure harum
-                    dolore expedita recusandae omnis obcaecati praesentium numquam,
-                    labore ad libero placeat saepe nemo possimus. Eligendi, magni culpa?
-                    Voluptate, eligendi eum.
-                </p>
-            </main>
+        <div class="row">
 
-            <article>
-                <img src="img/img2.jpg" />
-                <h2>Una image bonita de un cielo</h2>
-            </article>
-        </div>
-        <div class="articles">
-            <article>
-                <img src="img/img3.jpg" />
-                <h2>Una image bonita de un cielo</h2>
-            </article>
-            <article>
-                <img src="img/img4.jpg" />
-                <h2>Una image bonita de un cielo</h2>
-            </article>
-            <article>
-                <img src="img/img5.jpg" />
-                <h2>Una image bonita de un cielo</h2>
-            </article>
-        </div>
-        <footer>
-            <address>
-                <p>C/ Principal</p>
-                <p>Sevilla</p>
-            </address>
-            <div class="copyright">
-                Todas las fotos realizadas por @pekechis bajo la Licencia CC BY-SA
+            <header class="col-12">
+                <h1>Ejemplo de Maquetación con Grid</h1>
+                <h4>By @pekechis para @openwebinars</h4>
+            </header>
+            <div class="content_wrapper container-fluid">
+                <div class="row justify-content-between">
+
+                    <nav class="col-2">
+                        <div>Inicio</div>
+                        <div>Galería</div>
+                        <div>Productos</div>
+                        <div>Clientes</div>
+                        <div>Sobre nosotros</div>
+                        <div>Contacto</div>
+                    </nav>
+                    <main class="col-5 mb-4">
+                        <img src="img/img1.jpg" />
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure harum
+                            dolore expedita recusandae omnis obcaecati praesentium numquam,
+                            labore ad libero placeat saepe nemo possimus. Eligendi, magni culpa?
+                            Voluptate, eligendi eum.
+                        </p>
+                    </main>
+
+                    <article class="col-4 mb-4">
+                        <img src="img/img2.jpg" />
+                        <h2>Una image bonita de un cielo</h2>
+                    </article>
+                    <div class="articles offset-2 col-10 row justify-content-between">
+                        <article class="col-3">
+                            <img src="img/img3.jpg" />
+                            <h2>Una image bonita de un cielo</h2>
+                        </article>
+                        <article class="col-3">
+                            <img src="img/img4.jpg" />
+                            <h2>Una image bonita de un cielo</h2>
+                        </article>
+                        <article class="col-5">
+                            <img src="img/img5.jpg" />
+                            <h2>Una image bonita de un cielo</h2>
+                        </article>
+                    </div>
+                </div>
             </div>
-            <div class="social">
-                <img src="img/snapchat.jpg" /> 
-                <img src="img/facebook.jpg" />
-                <img src="img/twitter.jpg" />
-            </div>
-        </footer>
+
+            <footer class="col-12 row">
+                <address class="col-2">
+                    <p>C/ Principal</p>
+                    <p>Sevilla</p>
+                </address>
+                <div class="copyright col-9">
+                    Todas las fotos realizadas por @pekechis bajo la Licencia CC BY-SA
+                </div>
+                <div class="social col-1">
+                    <img src="img/snapchat.jpg" />
+                    <img src="img/facebook.jpg" />
+                    <img src="img/twitter.jpg" />
+                </div>
+            </footer>
+        </div>
     </div>
 </body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 
 </html>

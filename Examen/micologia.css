@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* 
+    Maquetación Grid
+*/
+
+.contenedor {
+    height: 100%;
+    display: grid;
+    padding: 0 10%;
+    grid-template-columns: 1fr;
+    grid-auto-rows: max-content;
+    gap: 1rem;
+}
+
+section {
+    display: grid;
+    height: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr;
+    gap: 1rem;
+}
+
+section h2 {
+    grid-column: span 3;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 1%;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: max-content auto max-content;
+    grid-auto-rows: max-content;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+/*
+    Decoración
+*/
+
+header {
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.contenedor a {
+    text-decoration: none;
+    color: black
+}
+
+nav {
+    padding: 1rem 0;
+    border-bottom: .2rem grey solid;
+    
+}
+
+nav a {
+    text-decoration: none;
+    padding: 1rem;
+}
+
+footer {
+    padding: 1rem 0;
+    border-top: .2rem grey solid
+}
+
+img {
+    width: 100%;
+    border-radius: .5rem;
+}
+
+.social img {
+    height: 1rem;
+    width: auto;
+}
+
+article {
+    border: .15rem solid grey;
+    border-radius: .5rem;
+    padding: 1rem;
+}
+
+article * {
+    margin-bottom: 1rem;
+}

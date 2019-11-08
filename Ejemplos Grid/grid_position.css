@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.cell{
+    font-size: 1.5rem;
+    background-color: #ccc;
+    border: darkgrey inset .25rem;
+    border-radius: .5rem;
+    text-align: center;
+}
+.contenedor{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    gap: .25rem;
+}
+.cell:nth-child(1), .cell:nth-child(5), .cell:nth-child(8), .cell:nth-child(10){
+    grid-column: span 2;
+}
+.cell:nth-child(2), .cell:nth-child(6){
+    grid-column: span 5;
+}
+.cell:nth-child(3), .cell:nth-child(7), .cell:nth-child(9), .cell:nth-child(11){
+    grid-column: span 3;
+}
+.cell:nth-child(4){
+    grid-column: span 2;
+}
+.cell:nth-child(-n+3), .cell:nth-child(12){
+    grid-row: span 2;
+}
+.cell:nth-child(4){
+    grid-row: span 10;
+}
+.cell:nth-child(5), .cell:nth-child(7){
+    grid-row: span 4;
+}
+.cell:nth-child(6){
+    grid-row: span 6;
+}
+.cell:nth-child(12){
+    grid-column: span 10;
+}
