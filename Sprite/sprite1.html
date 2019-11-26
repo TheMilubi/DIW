@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sprite: bebida refrescante</title>
+    <style>
+        #sprite {
+            position: absolute;
+            top: 100px;
+            left: 244px;
+            background-image: url("smb_mario_sheet.png");
+            background-repeat: no-repeat;
+            background-position: -82px 0;
+            width: 24px;
+            height: 24px;
+            animation: "moveX"1s steps(3) infinite, "moveDX"4s infinite alternate;
+
+        }
+
+        @keyframes moveX {
+            from {
+                background-position-x: -82px;
+            }
+
+            to {
+                background-position-x: -168px;
+            }
+        }
+
+        @keyframes moveDX {
+            from {
+                top: 100px;
+                left: 488px;
+            }
+
+            to {
+                top: 100px;
+                left: 100px;
+            }
+        }
+
+        @keyframes moveDXR {
+            from {
+                top: 100px;
+                left: 100px;
+            }
+            
+            to {
+                top: 100px;
+                left: 244px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="sprite"></div>
+
+</body>
+
+</html>
