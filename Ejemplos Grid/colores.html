@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Maquetado con Grid</title>
+    <style>
+        /* @media(min-width: 660px) { */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .contenedor {
+            display: grid;
+            /* grid-template-columns: repeat(5, 1fr);
+            grid-auto-rows: max-content; */
+            grid-template-areas:
+                "header header header header header"
+                "aside section section section section"
+                "footer footer footer footer footer"
+            ;
+            width: 1024px;
+            background-color: gray;
+        }
+
+        header {
+            grid-area: header;
+            background-color: tomato;
+            height: 150px;
+            
+        }
+
+        aside {
+            grid-area: aside;
+            background-color: gold;
+            height: 200px;
+            
+        }
+
+        section {
+            grid-area: section;
+            background-color: deepskyblue;
+            height: 200px;
+            
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: lightgreen;
+            height: 100px;
+            
+        }
+
+        /* } */
+
+        @media(max-width: 660px) {
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            .contenedor {
+                display: block;
+                width: 1024px;
+                background-color: gray;
+            }
+
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contenedor">
+        <header></header>
+        <aside></aside>
+        <section></section>
+        <footer></footer>
+    </div>
+</body>
+
+</html>
